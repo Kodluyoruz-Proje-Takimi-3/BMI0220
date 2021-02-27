@@ -8,20 +8,42 @@ import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
+import '../styles.css'
+
+
 const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    marginTop: theme.spacing(20)
+  // typography: {
+  //   fontFamily: 'Poppins'
+  // },
+  icon: {
+    color: "#F2A154 !important"
   },
+  root: {
+    width: "70%",
+    marginTop: theme.spacing(0),
+    margin: 'auto',
+    fontFamily: 'Poppins'
+  },
+
+  stepper: {
+    backgroundColor: "#BED9C7 !important",
+
+  },
+
   button: {
-    marginTop: theme.spacing(5),
-    marginRight: theme.spacing(1)
+    backgroundColor: "#F2A154 !important",
+
+
+    margin: theme.spacing(3)
   },
   actionsContainer: {
+
     marginBottom: theme.spacing(2)
   },
   resetContainer: {
-    padding: theme.spacing(3)
+    padding: theme.spacing(0),
+    backgroundColor: "#BED9C7 !important",
+
   }
 }));
 
@@ -41,7 +63,7 @@ function getStepContent(step) {
     case 1:
       return "For adults 20 years old and older, BMI is interpreted using standard weight status categories. These categories are the same for men and women of all body types and ages. Such as, Below 18.5, which BMI indexes as 'Underweight', above 18.5 and below 24.9, which BMI indexes as 'Normal or Heavyweight', above 25.0 and below 29.9 indexes as 'Overweight' and lastly, over 30.0 indexes as 'Obese'. ";
     case 2:
-      return `We have a fully functional custom built BMI calculator with diet recommendetions, let's try it!`;
+      return `Alright, so you seem to catch up with me! How about i take you to a trip to learn your BMI status and give you proper daily intake recommendation? Follow me to next step then!`;
     default:
       return "Unknown step";
   }
@@ -65,11 +87,15 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <div className={classes.root}>
-      <Stepper activeStep={activeStep} orientation="vertical">
+    <div className={classes.root} >
+      <Stepper className={classes.stepper} activeStep={activeStep} orientation="vertical">
         {steps.map((label, index) => (
           <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+            <StepLabel StepIconProps={{
+              classes: {
+                active: classes.icon
+              }
+            }}>{label}</StepLabel>
             <StepContent>
               <Typography>{getStepContent(index)}</Typography>
               <div className={classes.actionsContainer}>
@@ -89,7 +115,7 @@ export default function VerticalLinearStepper() {
                     className={classes.button}
                   >
                     {activeStep === steps.length - 1
-                      ? "Lets Calculate Your BMI in Next Step!"
+                      ? "The Last Step to Calculate BMI"
                       : "Next"}
                   </Button>
                 </div>

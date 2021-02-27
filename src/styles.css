@@ -1,17 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  background-color: #172b4d !important;
+  background-color: #1d2d50 !important;
   font-family: "Poppins";
   letter-spacing: 1px;
   /* text-align: center; */
+  overflow-x: hidden;
 }
 
 .text-primary {
   color: #5eaaa8 !important;
 }
+.text-lightgreen {
+  color: #5eaaa8 !important;
 
-.text-secondary {
+}
+
+.text-darkblue {
+  color: #172b4d !important;
+}
+.text-secondar {
   color: #f2a154 !important;
 }
 .fw-700 {
@@ -42,13 +50,37 @@ body {
 .fs-23 {
   font-size: 23px;
 }
+.fs-25 {
+  font-size: 25px;
+}
+.fs-35 {
+  font-size: 35px;
+}
+.fs-60 {
+  font-size: 60px;
+}
 .fs-75 {
   font-size: 75px;
 }
 .fs-50 {
   font-size: 50px;
 }
+.fs-200 {
+  font-size: 200px;
+}
 
+.green {
+  color:#348837;
+}
+.red {
+  color:#ec4646;
+}
+.orange {
+  color:#f58634;
+}
+.blue {
+  color:#51c2d5;
+}
 .btn-primary {
   background-color: #5eaaa8 !important;
 }
@@ -56,11 +88,30 @@ body {
   background-color: #f2a154 !important;
 }
 
+.bg-darkblue {
+  background-color: #172b4d !important;
+}
+.bg-lightgreen {
+  background-color: #bed9c7 !important;
+}
+
+.bg-orange {
+  background-color: #f2a154 !important;
+}
+
+.bg-gray {
+  background-color: #f0f0f0 !important;
+}
+
 .ls-2 {
   letter-spacing: 2px;
 }
 .ls-5 {
   letter-spacing: 5px;
+}
+
+.border-25 {
+  border-radius: 20px;
 }
 
 Button,
@@ -77,19 +128,64 @@ Button:active {
   display: "block";
   content: "\02630" !important;
 }
-
+.brand{
+  max-width: 140px;
+}
 .logo {
-  max-width: 120px;
+  max-width: 150px;
   max-height: auto;
-  filter: grayscale(100%);
   object-fit: contain;
+  filter: grayscale(100%);
 }
 .logo:hover {
+  max-width: 150px;
+  max-height: auto;
+  object-fit: contain;
   filter: grayscale(0%);
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+ cursor: pointer;
+ transition: all 0.8s ease;
+ transform: translateY(-10%);
 }
 
 .bg-none {
   background-color: transparent !important;
 }
+
+.shadows {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px -10px;
+}
+
+/* @media screen and (max-width:380) {
+  #calculate{margin-bottom:10px !important;}  
+}
+
+/* @media only screen and (max-width:440) {
+  #whatIs{margin-top:10px !important;}  
+} */
+
+/* @media screen and (max-width:380) {
+  #yourInfo{margin-left: 10px  !important;}  
+}
+@media screen and (max-width:380) {
+  .bmiIndex{font-size: 14px  !important;}  
+}
+
+@media screen and (max-width:380) {
+  .yaxes{font-size: 12px  !important;}  
+}
+@media screen and (max-width:380) {
+  .diet{overflow-x: hidden  !important;}  
+}
+@media screen and (max-width:380) {
+  .aboutBmi{font-size: 45px !important;
+  margin-left: auto;
+  }  
+}
+@media screen and (max-width:380) {
+  .aboutP1{margin-left: auto !important;}  
+} */ 
+
+
+
+
+

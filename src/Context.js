@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Footer from "./components/Footer.jsx";
-import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { v4 as uuidv4 } from "uuid";
-import link from "./dummy-data/link.js";
-import { getData, storeData } from "./helpers/localStorage";
-import SwipeableTemporaryDrawer from "./components/NavBar.jsx";
-import BMIForm from "./components/BMIForm.jsx";
-import InfoCard from "./components/InfoCard.jsx";
-import LineChart from "./components/LineChart.jsx";
+import { getData, storeData } from "./local-storage/localStorage";
+import BMIForm from "./components/home/BMIForm.jsx";
+import InfoCard from "./components/home/InfoCard.jsx";
+import LineChart from "./components/home/LineChart.jsx";
+// import link from "./data/link.js";
+// import SwipeableTemporaryDrawer from "./components/NavBar.jsx";
 
 const Context = () => {
   const initialState = () => getData("data") || [];
@@ -21,6 +19,7 @@ const Context = () => {
     const bmi = state.map((obj) => obj.bmi);
     let newData = { date, bmi };
     setData(newData);
+
   }, [state]);
 
   const handleChange = (val) => {

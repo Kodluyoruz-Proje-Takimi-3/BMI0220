@@ -1,11 +1,15 @@
 {
-  "name": "bmi-tracker-useref",
+  "name": "bmi",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "4.11.3",
     "@material-ui/icons": "4.11.2",
     "@material-ui/lab": "4.0.0-alpha.57",
@@ -21,6 +25,7 @@
     "react-chart": "0.0.1",
     "react-chartjs-2": "2.11.1",
     "react-dom": "17.0.1",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.0",
     "uuid": "8.3.2"
@@ -39,5 +44,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": "https://github.com/yagnurl/bmiTracker.git",
+  "author": "yagnur7@gmail.com <50737107+yagnurl@users.noreply.github.com>",
+  "license": "MIT"
 }
