@@ -1,8 +1,10 @@
+import "../../styles.css";
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Container, Form, Col, Row } from "react-bootstrap";
-import PropTypes from "prop-types";
-import "../styles.css";
+import { Link } from "react-router-dom";
+
 const initialValues = {
   weight: "",
   height: "",
@@ -30,51 +32,10 @@ const BMIForm = ({ change }) => {
     setState(initialValues);
     console.log(`handlesubmiti aldim`);
   };
-  // const [cards, setCards] = useState([]);
-  // const [infos, setInfo] = useState([]);
-
-  // let weightInput = useRef();
-  // let heightInput = useRef();
-
-  // function handleInput(event) {
-  //   event.preventDefault();
-  //   let weight = weightInput.current.value;
-  //   let height = heightInput.current.value;
-  //   let bmi = CalculateBMI(weight, height);
-
-  //   // let bmi = 50;
-
-  //   const object = {
-  //     weight: weight,
-  //     height: height,
-  //     bmi: bmi
-  //   };
-
-  //   if (object.weight && object.height) {
-  //     setCards([...cards, object]);
-  //     setInfo([...infos, object]);
-  //   }
-
-  //   weightInput.current.value = "";
-  //   heightInput.current.value = "";
-  // }
-
-  // function deleteCard(index) {
-  //   cards.splice(index, 1);
-  //   setCards([...cards]);
-  // }
-
-  // function CalculateBMI(weight, height) {
-  //   let heightToMeter = height / 100;
-  //   let bmi = Number(weight / (heightToMeter * heightToMeter)).toFixed(2);
-  //   return bmi;
-  // }
 
   return (
     <>
-      <Container>
-        {/* <h1>{weight}</h1>
-        <h1>{height}</h1> */}
+      <Container >
         <h1 className="text-white text-center mt-5">BMI Tracker</h1>
         <Form className="mt-5">
           <Row className="d-flex justify-content-center">
@@ -112,21 +73,25 @@ const BMIForm = ({ change }) => {
 
           <Row className="d-flex justify-content-center mt-4">
             <Button
-              class="btn btn-primary"
-              variant="primary rounded-pill  px-4 py-2 ls-2"
+
+              class=" btn btn-primary"
+              variant="primary rounded-pill  px-4 py-2 mx-4 ls-2 mt-3"
               type="submit"
               disabled={state.weight === "" || state.height === ""}
               onClick={handleSubmit}
             >
               Calculate BMI
             </Button>
-            <Button
-              class="btn btn-info "
-              variant="info rounded-pill mx-4 ls-2"
-              type="submit"
-            >
-              What is BMI?
-            </Button>
+            <Link to={"/infobmi"}>
+              <Button
+
+                class="btn btn-info  "
+                variant="info rounded-pill  px-4 py-2 mx-4 ls-2  mt-3"
+                type="submit"
+              >
+                What is BMI?
+              </Button>
+            </Link>
           </Row>
         </Form>
       </Container>
@@ -137,3 +102,4 @@ BMIForm.propTypes = {
   change: PropTypes.func.isRequired
 };
 export default BMIForm;
+
