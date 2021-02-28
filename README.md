@@ -1,4 +1,4 @@
-### Body Mass Index (BMI) Tracker 
+# Body Mass Index (BMI) Tracker 
 
 ***BMI Tracker*** is a website that calculates the body mass index based on the height and weight values received from the user, and also offers a list of suitable diets according to BMI.
 The values we reflect on the chart are currently stored in local memory. 
