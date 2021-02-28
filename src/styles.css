@@ -155,35 +155,6 @@ Button:active {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px -10px;
 }
 
-/* @media screen and (max-width:380) {
-  #calculate{margin-bottom:10px !important;}  
-}
-
-/* @media only screen and (max-width:440) {
-  #whatIs{margin-top:10px !important;}  
-} */
-
-/* @media screen and (max-width:380) {
-  #yourInfo{margin-left: 10px  !important;}  
-}
-@media screen and (max-width:380) {
-  .bmiIndex{font-size: 14px  !important;}  
-}
-
-@media screen and (max-width:380) {
-  .yaxes{font-size: 12px  !important;}  
-}
-@media screen and (max-width:380) {
-  .diet{overflow-x: hidden  !important;}  
-}
-@media screen and (max-width:380) {
-  .aboutBmi{font-size: 45px !important;
-  margin-left: auto;
-  }  
-}
-@media screen and (max-width:380) {
-  .aboutP1{margin-left: auto !important;}  
-} */ 
 
 
 

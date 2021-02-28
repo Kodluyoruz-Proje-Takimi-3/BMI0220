@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
-// import "../../style-diet.css";
 import DietCard from "../diet/DietCard";
 import "../../style-diet.css";
 
-
 function Normal() {
-
-
   const [data, setData] = useState([]);
   const [nutrients, setNutrients] = useState([]);
 
@@ -90,7 +86,6 @@ function Normal() {
             Total carbohydrates
             <span className="text-orange fs-35 fw-600">{nutrients.carbohydrates}</span>
           </div>
-
         </div>
       </div>
       <br />
@@ -99,9 +94,7 @@ function Normal() {
       {data.map((data) => (
         <DietCard {...data} nutrients={nutrients} key={data.id} />
       ))}
-
     </Container>
-
   );
 }
 

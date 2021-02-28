@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
 import "../../style-diet.css";
 import DietCard from "../diet/DietCard";
-// import "../../styles.css";
 function Overweight() {
   const [data, setData] = useState([]);
   const [nutrients, setNutrients] = useState([]);

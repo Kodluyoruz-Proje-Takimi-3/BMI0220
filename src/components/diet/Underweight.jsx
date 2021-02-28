@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Card } from "react-bootstrap";
 import "../../style-diet.css";
-// import "../../styles.css";
 import DietCard from "../diet/DietCard";
 function UnderWeight() {
   const [data, setData] = useState([]);

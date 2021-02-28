@@ -46,5 +46,5 @@ Clone down this repository. You will need node and npm installed globally on you
 **To Visit App:**
 localhost:3000/
 
-
+### ***This project is built by the Error by Night team. All rights reserved.***
 

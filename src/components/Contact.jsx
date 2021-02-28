@@ -38,7 +38,7 @@ function Contact() {
               {item.phonenum}
             </li>
 
-            <li className="mt-2 ls-2">     <FontAwesomeIcon className='mr-2' icon={faGithub} />  {item.github}</li>
+            <li className="mt-2 ls-2"><FontAwesomeIcon className='mr-2' icon={faGithub} />  {item.github}</li>
 
             <li className="mt-3 "> <FontAwesomeIcon className='mr-2' icon={faEnvelope} />{item.email}</li>
           </ul>

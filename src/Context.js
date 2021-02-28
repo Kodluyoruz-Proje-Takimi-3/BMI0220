@@ -5,8 +5,6 @@ import { getData, storeData } from "./local-storage/localStorage";
 import BMIForm from "./components/home/BMIForm.jsx";
 import InfoCard from "./components/home/InfoCard.jsx";
 import LineChart from "./components/home/LineChart.jsx";
-// import link from "./data/link.js";
-// import SwipeableTemporaryDrawer from "./components/NavBar.jsx";
 
 const Context = () => {
   const initialState = () => getData("data") || [];

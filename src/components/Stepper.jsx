@@ -12,9 +12,7 @@ import '../styles.css'
 
 
 const useStyles = makeStyles((theme) => ({
-  // typography: {
-  //   fontFamily: 'Poppins'
-  // },
+
   icon: {
     color: "#F2A154 !important"
   },
@@ -32,12 +30,9 @@ const useStyles = makeStyles((theme) => ({
 
   button: {
     backgroundColor: "#F2A154 !important",
-
-
     margin: theme.spacing(3)
   },
   actionsContainer: {
-
     marginBottom: theme.spacing(2)
   },
   resetContainer: {

@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 import "../../styles.css";
-// import { Row, Col, Carousel, Container } from "react-bootstrap";
-// import { Link } from "react-router-dom";
-
 import { Container } from "react-bootstrap";
-
-
 
 function DietCard({
   id,
@@ -42,12 +37,7 @@ function DietCard({
                   Ready in {readyInMinutes} minutes
                 </small>
               </p>
-              {/* <p className="card-text">
-                  <small> {nutrients.calories} </small>
-                  <small> {nutrients.fat} </small>
-                  <small> {nutrients.carbohydrates} </small>
-                  <small> {nutrients.protein} </small>
-                </p> */}
+
               <a className='fw-600 text-orange text-transform-upper' target="_blank" href={sourceUrl}>
                 To see recipe
               </a>

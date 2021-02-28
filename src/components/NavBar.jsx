@@ -1,7 +1,6 @@
 import React from "react";
 import { Nav, Navbar, Img } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import logo from ".././img/logo.png";
 import logogreen from ".././img/logo-green.png";
 import neww from ".././img/new.png";
 import orangee from ".././img/orange.png";

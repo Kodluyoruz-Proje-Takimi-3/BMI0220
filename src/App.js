@@ -1,5 +1,3 @@
-// import "./styles.css";
-//import "./style-diet.css";
 import React from "react";
 import Footer from "./components/Footer.jsx";
 import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
