@@ -7,7 +7,7 @@ The last, the diets we offer retrieval by Spoonacular API.
 
 #### Live Link of the Project
 
-[https://learnyourbmi.vercel.app/] (https://learnyourbmi.vercel.app/ https://learnyourbmi.vercel.app/")
+https://learnyourbmi.vercel.app/
 
 ### Technologies & Tools
 
